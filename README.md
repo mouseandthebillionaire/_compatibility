@@ -1,6 +1,6 @@
 # Compatibility
 
-An experiment with [digitalrelic](https://github.com/digitalrelic) in cooperative alt-ctrl. 
+A [Mouse & the Billionaire](https://github.com/mouseandthebillionaire) / ([digitalrelic](https://github.com/digitalrelic) colaboration exploring cooperative alt-ctrl. 
 
 "It's a metaphor for our relationship."
 
