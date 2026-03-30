@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-4566248354867360710
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 49d76276e566a4283a0b6912b2d82098
+  m_EffectName: simpleSine
+  m_MixLevel: 5d537894682364fe5a282243ec3733f9
+  m_Parameters:
+  - m_ParameterName: 'Instance Index '
+    m_GUID: d0d4aace454344e17a7d7b0785f0727e
+  - m_ParameterName: 'freq[1]'
+    m_GUID: ed94f2cfeff1e4de7908c0d222f0f5a3
+  - m_ParameterName: lfo_freq
+    m_GUID: f04c502799bf44162b074e70c8e133d8
+  - m_ParameterName: spread
+    m_GUID: 084b0224b94174753b957c2b66806432
+  - m_ParameterName: mode
+    m_GUID: a250067f689f2486d89ed5c6c8570769
+  - m_ParameterName: reverb/decay
+    m_GUID: 3afad5ea28fe541eda5a3b611e2cf36e
+  - m_ParameterName: reverb/drywet
+    m_GUID: d4b22fffee2ae4992b927c94602a4c35
+  - m_ParameterName: reverb/predelay
+    m_GUID: 14f908be46a414482a8661f40bd2db70
+  - m_ParameterName: reverb/indiffus
+    m_GUID: 86fbecf7dbdfa483bb673185a2a7e7c3
+  - m_ParameterName: reverb/indiffus
+    m_GUID: bde3c800f88774a7093bec56fd7b91b5
+  - m_ParameterName: reverb/inbandwi
+    m_GUID: 8f04b60ca26a44f9d8aa733770950776
+  - m_ParameterName: reverb/decaydif
+    m_GUID: 8e89ba4f3bf8248bc80323719f6bf267
+  - m_ParameterName: reverb/damping
+    m_GUID: 4f2c63e4c231045f2be03d20c5ef27d2
+  - m_ParameterName: reverb/decaydif
+    m_GUID: f31ebd0cce4c6463eab6d8bfdf82ebf7
+  - m_ParameterName: env.adsr/attack
+    m_GUID: a1c173620fb0a4659a8fe580effd0966
+  - m_ParameterName: env.adsr/decay
+    m_GUID: b4907093aec4b4777b36699791da5027
+  - m_ParameterName: env.adsr/sustai
+    m_GUID: 6d613cdaea7384170bd60e009e83b43f
+  - m_ParameterName: env.adsr/releas
+    m_GUID: b1fbf148604c84f93b656401130d3372
+  - m_ParameterName: osc.additive/pa
+    m_GUID: 553a8f5c1b79e45b9885ad3ab25e3a24
+  - m_ParameterName: osc.additive/de
+    m_GUID: 989959e86fcb943c5859cf349f78a491
+  - m_ParameterName: osc.additive/ba
+    m_GUID: 025a8b259b0c74c649ae20532ec2954e
+  - m_ParameterName: osc.additive/ga
+    m_GUID: 7823ae59edd344822b8e6d67a485b62e
+  - m_ParameterName: frequency
+    m_GUID: a96894e35fce54b328f84f25160efb8b
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Synth
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: a96894e35fce54b328f84f25160efb8b
+    name: frequency
+  - guid: f04c502799bf44162b074e70c8e133d8
+    name: lfo_freq
+  m_AudioMixerGroupViews:
+  - guids:
+    - 9ea43da48fc2e41c1b0f6968b5cd8d71
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 9ea43da48fc2e41c1b0f6968b5cd8d71
+  m_Children: []
+  m_Volume: 3e3969d5b17bb4352889c9494fe96498
+  m_Pitch: 05899e2daf50d4995a66eb3e2c52417f
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  - {fileID: -4566248354867360710}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 8c47883ed81df465bab7bcac7044d97f
+  m_EffectName: Attenuation
+  m_MixLevel: c51f850d440814ea99781eb255b8786c
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 0b81e84804e494c48a68295c40b73776
+  m_FloatValues:
+    c86a0bb0db813408d843a7f24467cd62: 0
+    a96894e35fce54b328f84f25160efb8b: 64
+    84a84b442bbbd4d0298766d8a3d3f58e: 0
+    f04c502799bf44162b074e70c8e133d8: 13
+    340bd988416af4280bebae591c433a16: 37
+    945e2cb972d704b22b0821dfb8bcd1db: 0
+    2bdefd0a83e554b7abc3088699a6382a: 0
+    70b2d44d218344d2faa86b1ef84c68f9: 36
+    ed94f2cfeff1e4de7908c0d222f0f5a3: 0
+  m_TransitionOverrides: {}

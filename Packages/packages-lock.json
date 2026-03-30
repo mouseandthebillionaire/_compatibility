@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.cycling74.rnbotypes": {
+      "version": "file:/Users/m/_Projects/RNBO2UNITY/RNBOTypes",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.cycling74.simplesine": {
+      "version": "file:/Users/m/_Projects/RNBO2UNITY/build/simpleSine",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.cycling74.rnbotypes": "0.0.2"
+      }
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.7",
       "depth": 0,
